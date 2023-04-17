@@ -1,0 +1,57 @@
+{
+    "Account Collection": {
+        "ID": 529,
+        "FirstName": "Kia",
+        "LastName": "Miles",
+        "Email": "kia.miles@gmail.com",
+        "Password": "HF*9eh@4fe&wh8#"
+    },
+    "Address Collection":{
+        "ID": 666,
+        "FirstName": "Kia",
+        "LastName": "Miles",
+        "Phone Number": 9076879192,
+        "Street Address": "5345 Kennedy St.",
+        "Suite Number": "",
+        "City": "Fort Benning",
+        "State": "Alaska",
+        "Default Address": true,
+        "Account ID": 529
+    },
+    "Hobby Collection":{
+        "ID": 182,
+        "Name": "Puzzles",
+        "Seller": 529,
+        "Items": [290, 827, 918],
+        "Date Added": "10/24/2020",
+        "Calculated Price": 120.89,
+        "Seller Price": 150.44
+    },
+    "Item Collection":{
+        "ID":290,
+        "Name": "Van Gogh Sunflower Puzzle",
+        "Description": "1000 piece Vincent van Gogh puzzle",
+        "Condition": 10,
+        "Calculated Price": 40.65,
+        "Seller Price": 55.30,
+        "Hobby": 182
+    },
+    "Payment Collection":{
+        "ID": 743,
+        "Name on Card": "Kia Miles",
+        "Card Number": 1865186518651865,
+        "Expiration Date": "10/24",
+        "Security Code": 777,
+        "Account ID": 529
+    },
+    "List Collection":{
+        "Name": "Cross Stitching",
+        "Hobbies": [453, 276, 362, 368],
+        "Items": [112, 463, 152],
+        "Account ID": 529
+    },
+    "Purchase History Collection":{
+        "Account": 529,
+        "Purchases": [453, 152, 276]
+    }
+}
