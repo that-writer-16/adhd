@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Account = () => {
+  
+ const navigate = useNavigate();
   return (
     <div>Account</div>
   )
