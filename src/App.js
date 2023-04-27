@@ -16,13 +16,16 @@ import Messaging from './pages/Messaging';
 import Notification from './pages/Notification';
 import Payment from './pages/Payment';
 import Purchase from './pages/Purchase';
-import NavBar from './components/NavBar';
+import Sell from './pages/Sell';
+import NavBar from './Components/NavBar';
+import MiniNavBar from './Components/MiniNavBar';
 import NoMatch from './Components/NoMatch';
 
 
 function App() {
   return (
     <>
+    <MiniNavBar />
     <NavBar />
       <Routes>
       <Route path="/" element={<Home />} />
@@ -41,9 +44,9 @@ function App() {
       <Route path="/notification" element={<Notification />} />
       <Route path="/payment" element={<Payment />} /> 
       <Route path="/purchase" element={<Purchase />} /> 
+      <Route path="/sell" element={<Sell />} /> 
       <Route path="*" element={<NoMatch />} />  
     </Routes>
-
     </>
   );
 }
