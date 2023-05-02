@@ -2,21 +2,15 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const MiniNavBar = () => {
-return (
-    <nav>
-    <ul>
-    <li>
-        <NavLink to="/messaging">Messaging</NavLink>
-    </li>
-    <li>
-        <NavLink to="/notification">Notification</NavLink>
-    </li>
-    <li>
-        <NavLink to="/account">Account</NavLink>
-    </li>
-    </ul>
-</nav>
-)
+    return (
+        <nav>
+        <ul>
+        <li>
+            <NavLink to="/account">Account</NavLink>
+        </li>
+        </ul>
+        </nav>
+    )
 }
 
 export default MiniNavBar
