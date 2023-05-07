@@ -6,7 +6,15 @@ const Hobby = () => {
   
  const navigate = useNavigate();
   return (
-    <div>Hobby</div>
+    <div>
+      <h3>Name</h3>
+      <img />
+      <h3>Price</h3>
+      <button>Buy</button>
+      <h3>Details</h3>
+      <p>Details</p>
+
+    </div>
   )
 }
 

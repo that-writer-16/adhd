@@ -16,3 +16,13 @@
 .App-link {
   color: #61dafb;
 }
+
+img{
+  height: 50px;
+  width: 50px;
+  border: solid 2px #282c34;
+}
+
+#cHobby{
+  display: flex;
+}

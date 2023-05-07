@@ -4,7 +4,8 @@
         "FirstName": "Kia",
         "LastName": "Miles",
         "Email": "kia.miles@gmail.com",
-        "Password": "HF*9eh@4fe&wh8#"
+        "Password": "HF*9eh@4fe&wh8#",
+        "PasswordConfirmation": "HF*9eh@4fe&wh8#"
     },
     "Address Collection":{
         "ID": 666,
@@ -21,6 +22,7 @@
     "Hobby Collection":{
         "ID": 182,
         "Name": "Puzzles",
+        "Description": "Different Puzzles & Accessories",
         "Seller": 529,
         "Items": [290, 827, 918],
         "Date Added": "10/24/2020",
