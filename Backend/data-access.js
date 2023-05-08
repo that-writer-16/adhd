@@ -1,11 +1,11 @@
-const { MongoClient, ObjectId } = require('mongodb');d
+const { MongoClient, ObjectId } = require('mongodb');
 
 const uri = "mongodb+srv://tharris:zZ9UefFGL63S191X@cluster0.poz2wm4.mongodb.net/";
 
 const dbName = 'ADHD';
 
 exports.DA = {
-    createAccount: async function(){
+    createAccount: async function(id, firstName, lastName, email, password, passwordConfirmation){
         const client = await MongoClient.connect(uri);
         try{
             const db = client.db(dbName);
@@ -32,7 +32,7 @@ exports.DA = {
             client.close();
         }
     },
-    createHobby: async function(){
+    createHobby: async function(id, name, description, seller, items, calculatedPrice, sellerPrice){
         const client = await MongoClient.connect(uri);
         try{
             const db = client.db(dbName);
@@ -60,7 +60,7 @@ exports.DA = {
             client.close();
         }
     },
-    createItem: async function(){
+    createItem: async function(id, name, description, condition, calculatedPrice, sellerPrice, hobby){
         const client = await MongoClient.connect(uri);
         try{
             const db = client.db(dbName);
@@ -88,7 +88,7 @@ exports.DA = {
             client.close();
         }
     },
-    getAccount: async function(){
+    getAccount: async function(id){
         const client = await MongoClient.connect(uri);
         try{
             const db = client.db(dbName);
@@ -106,7 +106,7 @@ exports.DA = {
             client.close();
         }
     },
-    getHobby: async function(){
+    getHobby: async function(id){
         const client = await MongoClient.connect(uri);
         try{
             const db = client.db(dbName);
@@ -164,7 +164,7 @@ exports.DA = {
             client.close();
         }
     },
-    updateHobby: async function(){
+    updateHobby: async function(id, name, description, seller, items, calculatedPrice, sellerPrice){
         const client = await MongoClient.connect(uri);
         try{
             const db = client.db(dbName);
@@ -177,7 +177,7 @@ exports.DA = {
                     Name: name,
                     Description: description,
                     Seller: seller,
-                    Items: [],
+                    Items: items,
                     CalculatedPrice: calculatedPrice,
                     SellerPrice: sellerPrice
                 }
@@ -196,7 +196,7 @@ exports.DA = {
             client.close();
         }
     },
-    updateItem: async function(){
+    updateItem: async function(id, name, description, condition, calculatedPrice, sellerPrice, hobby){
         const client = await MongoClient.connect(uri);
         try{
             const db = client.db(dbName);
@@ -228,7 +228,7 @@ exports.DA = {
             client.close();
         }
     },
-    deleteHobby: async function(){
+    deleteHobby: async function(id){
         const client = await MongoClient.connect(uri);
         try{
             const db = client.db(dbName);
@@ -248,7 +248,7 @@ exports.DA = {
             client.close();
         }
     },
-    deleteItem: async function(){
+    deleteItem: async function(id){
         const client = await MongoClient.connect(uri);
         try{
             const db = client.db(dbName);
