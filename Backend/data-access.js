@@ -4,7 +4,7 @@ const uri = "mongodb+srv://tharris:zZ9UefFGL63S191X@cluster0.poz2wm4.mongodb.net
 
 const dbName = 'ADHD';
 
-exports.DA = {
+exports.Access = {
     createAccount: async function(id, firstName, lastName, email, password, passwordConfirmation){
         const client = await MongoClient.connect(uri);
         try{
@@ -43,7 +43,7 @@ exports.DA = {
                 Name: name,
                 Description: description,
                 Seller: seller,
-                Items: [],
+                Items: items,
                 CalculatedPrice: calculatedPrice,
                 SellerPrice: sellerPrice
             }
@@ -94,11 +94,13 @@ exports.DA = {
             const db = client.db(dbName);
             const collection = db.collection('Account');
 
-            var query = { _id: new ObjectId(id) };
+            var query = { ID: id };
             var results = await collection.find(query).toArray();
 
             console.log("getAccount: results!");
             console.log(results);
+
+            return results;
         }catch(e){
             console.log("DA.getAccount: Something don Goofed.");
             console.log(e);
@@ -112,11 +114,13 @@ exports.DA = {
             const db = client.db(dbName);
             const collection = db.collection('Hobby');
 
-            var query = { _id: new ObjectId(id) };
+            var query = { ID: id };
             var results = await collection.find(query).toArray();
 
             console.log("getHobby: results!");
             console.log(results);
+
+            return results;
         }catch(e){
             console.log("DA.getHobby: Something don Goofed.");
             console.log(e);
@@ -170,7 +174,7 @@ exports.DA = {
             const db = client.db(dbName);
             const collection = db.collection('Hobby');
 
-            var query = { _id: new ObjectId(id) };
+            var query = { ID: id };
             var update = {
                 $set: {
                     ID: id,
@@ -202,7 +206,7 @@ exports.DA = {
             const db = client.db(dbName);
             const collection = db.collection('Item');
 
-            var query = { _id: new ObjectId(id) };
+            var query = { ID: id };
             var update = {
                 $set: {
                     ID: id,
@@ -234,7 +238,7 @@ exports.DA = {
             const db = client.db(dbName);
             const collection = db.collection('Hobby');
 
-            var query = { _id: new ObjectId(id) };
+            var query = { ID: id };
             var results = await collection.deleteOne(query);
 
             console.log("deleteHobby: results!");
@@ -254,7 +258,7 @@ exports.DA = {
             const db = client.db(dbName);
             const collection = db.collection('Item');
 
-            var query = { _id: new ObjectId(id) };
+            var query = { ID: id };
             var results = await collection.deleteOne(query);
 
             console.log("deleteItem: results!");

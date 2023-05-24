@@ -1,28 +1,198 @@
-.App {
+.Center {
   text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.hundo{
+  min-width: 100%;
+  background-color: blueviolet;
 }
-
-img{
-  height: 50px;
-  width: 50px;
-  border: solid 2px #282c34;
+.form{
+  background-color: #b3ff00;
+  flex-grow: 1;
 }
+.input{
+  width: 50%;
+  padding: 12px 10px;
+  margin: 8px 0px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.input:focus{
+  background-color: aqua;
+}
+input[type=submit]{
+  width: 25%;
+  padding: 12px 10px;
+  margin: 8px 0px;
+  box-sizing: border-box;
+  border: #eeff00;
+  border-style: outset;
+  border-radius: 5px;
+  color: #0055ff;
+  background-color: #eeff00;
+} 
 
-#cHobby{
+
+
+html {
+  background-color: #dae3f5;
+  color: black;
+}
+Link{
+  text-decoration: none;
+}
+#nav {
+  padding: 10px;
+  padding-right: 40px;
+  top: 0px;
+  position: sticky;
+  background-color: bisque;
+}
+#nav ul {
+  padding: auto;
+
+}
+#nav ul li{
+  font-size: 27px;
+  list-style-type: none;
+  display: inline;
+  margin: 2px;
+  padding: 5px;
+  border: 1px solid #751313;
+  /* border-style: outset; */
+  /* background-color: aquamarine; */
+  border-radius: 5px;
+  text-decoration: none;
+}
+#nav ul li:last-child {
+  float: right;
+  margin-bottom: 15px;
+}
+#home {
   display: flex;
+  flex-direction: row;
+  background-color: #751313;
+}
+.home {
+  border: 1px solid #751313;
+  background-color: aquamarine;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  flex-grow: 1;
+}
+.h3 {
+  text-decoration-line: underline;
+  text-decoration-color: purple;
+  text-decoration-style: double;
+  text-decoration-thickness: 2px;
+}
+#browse {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #751313;
+}
+#cHobby{
+  background-color: aquamarine;
+  border: aquamarine 5px solid;
+  /* max-width: 113px; */
+}
+#bHobby{
+  background-color: #0055ff;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 15px;
+  /* max-width: 200px; */
+
+}
+#cHobbyImage{
+  height: 100px;
+  width: 100px;
+  border: solid 2px #282c34;
+  /* margin-right: 15px; */
+}
+#cHobbyInfo{
+  display: flex;
+  flex-direction: row;
+  background-color: bisque;
+}
+.cHInfo{
+  text-decoration: none;
+  flex-grow: 1;
+  background-color: #eeff00;
+  justify-content: space-between;
+}
+#membership{
+  display: flex;
+}
+
+#sHobby{
+  background-color: #751313;
+  max-width: 110px;
+  min-width: 110px;
+  min-height: 210px;
+  max-height: 210px;
+}
+#sbHobby{
+  background-color: #1eff00;
+}
+#sHobbyImage{
+  margin-top: 5px;
+  width: 100px;
+  height: 100px;
+  border: #0055ff 1px solid;
+}
+#sell{
+  display: flex;
+  flex-direction: row;
+}
+#editHobby{
+  border: #1eff00 3px solid;
+}
+#editHobbyLink{
+  max-width: 105px;
+  min-width: 105px;
+  min-height: 205px;
+  max-height: 205px;
+  background-color: #1eff00;
+}
+
+
+
+#editItem{
+  border: #282c34 3px solid;
+}
+
+
+
+
+
+
+
+
+
+
+#pHobby{
+  background-color: #1eff00;
+  display: flex;
+  justify-content: space-evenly;
+}
+#pHobbyI{
+  border: #282c34 2px solid;
+  width: 400px;
+  height: 400px;
+}
+#buy{
+  /* font-size: 30px;
+  height: 50px;
+  width: 200px; */
+}
+#sellerName{
+  margin-top: 0px;
+}
+#nHobby{
+  margin-bottom: 0px;
 }

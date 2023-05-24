@@ -1,24 +1,26 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-  const navigate = useNavigate();
   
   return (
-    <div>
-      <div id='contact'>
-        <h3>Contact</h3>
-        <p></p>
+    <>
+    <h2 className='Center'>ADHD Trading</h2>
+    <div id='home' className='hundo'>
+      
+      <div className='home' id='contact'>
+        <h3 className='h3'>Contact</h3>
+        <p>Details</p>
       </div>
-      <div id='home'>
-        <h3>About</h3>
-        <p></p>
+      <div className='home' id='about'>
+        <h3 className='h3'>About</h3>
+        <p>Details</p>
       </div>
-      <div id='creator'>
-        <h3>Creator</h3>
-        <p></p>
+      <div className='home' id='creator'>
+        <h3 className='h3'>Creator</h3>
+        <p>Details</p>
       </div>
     </div>
+    </>
   )
 }
 

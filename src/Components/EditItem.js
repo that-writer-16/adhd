@@ -1,19 +1,15 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-
 
 const EditItem = () => {
-  
- const navigate = useNavigate();
   return (
-    <div>
+    <div id='editItem'>
       <form>
-        <input type='text' placeholder='Name'></input>
-        <input type='text' placeholder='Price'></input>
-        <input type='text' placeholder='description'></input>
+        <input type='text' placeholder='Name' />
+        <input type='text' placeholder='Price' />
+        <input type='text' placeholder='description' />
         <label for="img">Add an Image</label>
-        <input id='img' type='image'></input>
-        <input type='submit'>Submit</input>
+        <input id='img' type='image' alt=''/>
+        <input type='submit' />Submit
       </form>
     </div>
   )

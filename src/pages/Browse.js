@@ -1,13 +1,37 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import Hobby from '../Components/Hobby';
 
 
 const Browse = () => {
   
- const navigate = useNavigate();
   return (
-    <div>
+    <div id='browse' className='hundo Center'>
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
+      <Hobby />
       <Hobby />
       <Hobby />
       <Hobby />
