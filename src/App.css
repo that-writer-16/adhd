@@ -5,20 +5,27 @@
 }
 .hundo{
   min-width: 100%;
-  background-color: blueviolet;
 }
 .form{
   background-color: #b3ff00;
   flex-grow: 1;
 }
-.input{
-  width: 50%;
+.input, .input2, .input3{
   padding: 12px 10px;
   margin: 8px 0px;
   box-sizing: border-box;
   border-radius: 5px;
 }
-.input:focus{
+.input{
+  width: 50%;
+}
+.input2{
+  width: 25%;
+}
+.input3{
+  width: 12.5%;
+}
+.input:focus, .input2:focus, .input3:focus{
   background-color: aqua;
 }
 input[type=submit]{
@@ -32,9 +39,6 @@ input[type=submit]{
   color: #0055ff;
   background-color: #eeff00;
 } 
-
-
-
 html {
   background-color: #dae3f5;
   color: black;
@@ -51,7 +55,6 @@ Link{
 }
 #nav ul {
   padding: auto;
-
 }
 #nav ul li{
   font-size: 27px;
@@ -71,7 +74,7 @@ Link{
 }
 #home {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #751313;
 }
 .home {
@@ -106,7 +109,6 @@ Link{
   padding: 5px;
   margin: 15px;
   /* max-width: 200px; */
-
 }
 #cHobbyImage{
   height: 100px;
@@ -133,17 +135,22 @@ Link{
   background-color: #751313;
   max-width: 110px;
   min-width: 110px;
-  min-height: 210px;
-  max-height: 210px;
-}
-#sbHobby{
-  background-color: #1eff00;
+  min-height: 100px;
+  max-height: 150px;
 }
 #sHobbyImage{
   margin-top: 5px;
   width: 100px;
   height: 100px;
   border: #0055ff 1px solid;
+}
+#sHobbyInfo{
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+}
+.sHInfo{
+  margin: 5px;
 }
 #sell{
   display: flex;
@@ -153,28 +160,31 @@ Link{
   border: #1eff00 3px solid;
 }
 #editHobbyLink{
-  max-width: 105px;
-  min-width: 105px;
-  min-height: 205px;
-  max-height: 205px;
-  background-color: #1eff00;
+  max-width: 110px;
+  min-width: 110px;
+  min-height: 100px;
+  max-height: 150px;
+  background-color: #ff0000;
+  display: flex;
+  flex-direction: column-reverse;
 }
-
-
-
+#items{
+  display: flex;
+  flex-direction: column;
+}
+#newItem, #lessItem{
+  width: 5%;
+  padding: 6px 5px;
+  font-size: 20px;
+  margin: 8px 0px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
 #editItem{
+  /* width: 75%; */
   border: #282c34 3px solid;
+  margin: 5px;
 }
-
-
-
-
-
-
-
-
-
-
 #pHobby{
   background-color: #1eff00;
   display: flex;
@@ -185,14 +195,14 @@ Link{
   width: 400px;
   height: 400px;
 }
-#buy{
-  /* font-size: 30px;
-  height: 50px;
-  width: 200px; */
-}
 #sellerName{
   margin-top: 0px;
 }
 #nHobby{
   margin-bottom: 0px;
+}
+#contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

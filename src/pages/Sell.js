@@ -10,8 +10,8 @@ const navigate = useNavigate();
     <div id='sell' className='hundo'>
       <SellHobby />
       <NavLink to="/hobby/edit" id='editHobbyLink' className="Center">
-      <img src='/images/plus.png' alt=''/>
-        <input type='button' value={"Add New Hobby"}/>
+        <img src='/images/plus.png'/><br/>
+        New Hobby
       </NavLink>
     </div>
   )

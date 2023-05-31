@@ -3,42 +3,46 @@ import { useNavigate } from 'react-router-dom';
 import EditItem from '../Components/EditItem'
 
 const EditHobby = () => {
-  
-const navigate = useNavigate();
+  const navigate = useNavigate();
+  const [items, setItem] = useState([]);
+  const [pics, setPic] = useState([]);
 
-const [items, setItem] = useState([]);
-
-function addItem(){
- setItem([...items, {name:"", description:""}]);
-}
+  function deleteItem(){
+    let newItems = items.pop();
+    //items.
+    setItem([items.pop()]);
+  }
+  function addItem(){
+    setItem([...items, {name:"", description:""}]);
+  }
+  function addPics(){
+    setPic([...pics, {src:""}]);
+  }
   return (
-    <div id='editHobby'>
+    <div>
       <button className="btn" onClick={() => navigate(-1)}>
-        <input type='image' src='/images/back.png' alt=""/>
+        <input type='image' src='/images/back.png' alt="Back Arrow"/>
       </button>
-      <form>
-        <label for="name">Hobby Name </label>
-        <input id='name' type="text" className='input'/>
-        <br />
-        <label for="img">Add an Image </label> 
-        <input type="file" alt="" />
-        <br />
-        <label for="img">Condition </label> 
-        <input type="number" className='input'/>
-        <br />
-        <label for="img">Add an Image </label> 
-        <input type="text" className='input'/>
-        <br />
+      <form id='editHobby' className='Center'>
+        <input id='name' type="text" className='input2' placeholder='Hobby Name' autofocus required/>
+        <input type="text" className='input2' placeholder='Price' required/><br/>
+        <label>Add an Image </label> 
+        <input type="file" required/><br/>
+        <textarea placeholder='Description' className='input' required></textarea>
       </form>
-      <div>
-        {
-          items?.map((item) => (
-            <EditItem name={item.name} />
-          ))
-        }
-        <button onClick={() => addItem()}>+</button>
+      <div className='Center'>
+        <div id='items' form='editHobby' className='Center'>
+          {
+            items?.map((item) => (
+              <EditItem name={item.name} />
+            ))
+          }
+          <button id='newItem' onClick={() => addItem()}>+</button>
+          <button id='lessItem' onClick={() => deleteItem()}>-</button>
+          <br/>
+        </div>
+        <input type='submit' form='editHobby'/>
       </div>
-      <input type='submit' />
     </div>
   )
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import Hobby from '../Components/Hobby';
 
-
 const Browse = () => {
   
   return (

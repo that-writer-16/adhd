@@ -9,8 +9,8 @@ const SellHobby = () => {
 				<div id='sHobbyInfo'>
 					<p className='sHInfo'>Name</p>
 					<NavLink to="/hobby/edit">
-						<button>
-							Edit
+						<button className='sHInfo'>
+							Edit  
 						</button>
 					</NavLink>
 				</div>
